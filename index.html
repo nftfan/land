@@ -46,28 +46,32 @@
     background-position: center;
     filter: blur(0px);
     z-index: -1;
-     animation: mailReceive 18s ease-out 0s infinite;
+    animation: amazingAnimation 6s ease-in-out 0s infinite;
 }
 
-@keyframes mailReceive {
+@keyframes amazingAnimation {
     0% {
-        transform: translateY(-100%);
+        transform: translateY(-100%) scale(0.5) rotate(0deg);
         opacity: 0;
     }
-    50% {
-        transform: translateY(10%);
+    20% {
+        transform: translateY(0) scale(1.2) rotate(15deg);
         opacity: 1;
     }
-    70% {
-        transform: translateY(-5%);
+    40% {
+        transform: translateY(-10%) scale(1) rotate(-10deg);
         opacity: 1;
     }
-    90% {
-        transform: translateY(0%);
+    60% {
+        transform: translateY(5%) scale(1.1) rotate(5deg);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(-2%) scale(1) rotate(-3deg);
         opacity: 1;
     }
     100% {
-        transform: translateY(0);
+        transform: translateY(0) scale(1) rotate(0deg);
         opacity: 1;
     }
 }
