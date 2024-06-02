@@ -46,32 +46,24 @@
     background-position: center;
     filter: blur(0px);
     z-index: -1;
-     animation: bounceInStay 3s ease-in-out 0s infinite;
+     animation: mailReceive 18s ease-out 0s infinite;
 }
 
-@keyframes bounceInStay {
+@keyframes mailReceive {
     0% {
-        transform: translateY(100%);
+        transform: translateY(-100%);
         opacity: 0;
     }
     50% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    60% {
-        transform: translateY(-15%);
+        transform: translateY(10%);
         opacity: 1;
     }
     70% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    80% {
-        transform: translateY(-10%);
+        transform: translateY(-5%);
         opacity: 1;
     }
     90% {
-        transform: translateY(0);
+        transform: translateY(0%);
         opacity: 1;
     }
     100% {
@@ -79,6 +71,11 @@
         opacity: 1;
     }
 }
+
+
+
+
+
 
 
 
