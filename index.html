@@ -41,23 +41,21 @@
         background-position: center;
         filter: blur(0px);
         z-index: -1;
-		  animation: paperFold 5s ease-in-out 0s forwards;
-    transform-origin: center center;
+		animation: fadeInFromBlack 5s ease-in-out 0s forwards;
+		  
     }
-@keyframes paperFold {
+@keyframes fadeInFromBlack {
     0% {
         opacity: 0;
-        transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(0.5);
-    }
-    50% {
-        opacity: 0.5;
-        transform: perspective(600px) rotateX(180deg) rotateY(0deg) scale(0.75);
+        background-color: black;
     }
     100% {
         opacity: 1;
-        transform: perspective(600px) rotateX(0deg) rotateY(360deg) scale(1);
+        background-color: transparent;
     }
 }
+
+
 
     .promo-content {
         position: relative;
