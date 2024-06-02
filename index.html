@@ -7,86 +7,49 @@
 <style>
     body {
         font-family: 'Helvetica Neue', Arial, sans-serif;
-        margin: 0;
+        margin-top: 10px;
         padding: 0;
         height: 100vh;
         display: flex;
         justify-content: center;
-        align-items: center;
-        background: #000000;
+        
+        background: linear-gradient(135deg, #1f1c2c, #928dab);
     }
-
-.promo-container {
-    position: relative;
-    padding: 20px;
-    border-radius: 0px;
-    
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
-    overflow: hidden;
-    height: 600px; /* Add this line to set the height */
-}
-
 
     .promo-container {
-    position: relative;
-    overflow: hidden; /* Ensure that the animated image doesn't overflow */
-}
-
-.promo-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://bafybeih2nsbgaw7szabh4mi4grwcqebyruovbrftcjtg3k7ogqbiwqycqm.ipfs.nftstorage.link/');
-    background-size: cover;
-    background-position: center;
-    filter: blur(2px);
-    z-index: -1;
-    animation: fadeInThenZoomInAndVanish 6s ease-in-out infinite;
-}
-
-@keyframes fadeInThenZoomInAndVanish {
-    0% {
-        opacity: 0;
-        transform: scale(1);
-        background-color: black;
+        position: relative;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        max-width: 350px;
+        width: 100%;
+        overflow: hidden;
+        height: 500px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        background-color: rgba(255, 255, 255, 0.1);
     }
-    60% {
-        opacity: 1;
-        transform: scale(1);
-        background-color: transparent;
+
+    .promo-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('https://bafybeih2nsbgaw7szabh4mi4grwcqebyruovbrftcjtg3k7ogqbiwqycqm.ipfs.nftstorage.link/');
+        background-size: cover;
+        background-position: center;
+        filter: blur(1px);
+        z-index: -1;
     }
-    100% {
-        opacity: 0;
-        transform: scale(2);
-        background-color: transparent;
-    }
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
-     .promo-content {
+    .promo-content {
         position: relative;
         z-index: 1;
         padding: 20px;
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.85);
         border-radius: 12px;
-        margin-top: 190px; /* Move content down */
+        margin-top: 190px;
     }
 
     input[type="text"] {
